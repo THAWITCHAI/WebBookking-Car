@@ -16,32 +16,42 @@ export default function Sidebar({}: Props) {
           <p className="role">แอดมิน</p>
         </div>
       </div>
-      
+
       <div className="sidebar-menu">
         <ul>
           <li className="menu-i">
             <Image src={"/security.png"} width={24} height={24} alt={""} />
-            <Link href={'/wait'} className="link">รออนุมัติ</Link>
+            <Link href={"/admin/wait"} className="link">
+              รออนุมัติ
+            </Link>
           </li>
           <li className="menu-i">
             <Image src={"/car.png"} width={24} height={24} alt={""} />
-            <Link href={'/data/cars'} className="link">ข้อมูลรถ</Link>
+            <Link href={"/admin/data/cars"} className="link">
+              ข้อมูลรถ
+            </Link>
           </li>
           <li className="menu-i">
             <Image src={"/employee.png"} width={24} height={24} alt={""} />
-            <Link href={'/data/employees'} className="link">ข้อมูลพนังงาน</Link>
+            <Link href={"/admin/data/employees"} className="link">
+              ข้อมูลพนังงาน
+            </Link>
           </li>
           <li className="menu-i">
             <Image src={"/user.png"} width={24} height={24} alt={""} />
-            <Link href={'/data/users'} className="link">ข้อมูลลูกค้า</Link>
+            <Link href={"/admin/data/users"} className="link">
+              ข้อมูลลูกค้า
+            </Link>
           </li>
           <li className="menu-i">
             <Image src={"/return.png"} width={24} height={24} alt={""} />
-            <Link href={'/cars-empty'} className="link">รถที่ว่าง</Link>
+            <Link href={"/admin/cars-empty"} className="link">
+              รถที่ว่าง
+            </Link>
           </li>
         </ul>
       </div>
-      
+
       <div className="sidebar-footer">
         <ul>
           <li className="menu-i">

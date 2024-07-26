@@ -2,19 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
-* {
+/* Admin */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.body {
   font-family: "Mitr", sans-serif;
   font-weight: 200;
   font-style: normal;
-}
-.body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .content {
+  font-family: "Mitr", sans-serif;
+  font-weight: 200;
+  font-style: normal;
   height: 100%;
   background-color: white;
   width: 85%;
@@ -30,6 +35,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 10%);
 }
+
 .sidebar-head {
   width: 100%;
   display: flex;
@@ -123,9 +129,68 @@
   width: 100%;
 }
 
-.not{
+.not {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+/* Admin */
+
+/* Client */
+.sidebarUser {
+  background-color: #1c3144;
+  color: white;
+  height: 100%;
+  width: 15%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 10%);
+}
+.content-user {
+  width: 85%;
+  height: 100%;
+  padding: 2%;
+}
+.navbar {
+  width: 100%;
+  height: 10%;
+  background-color: #1c3144;
+  display: flex;
+  justify-content: space-around;
+}
+.Link {
+  color: white;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+}
+.Link:hover {
+  background-color: orangered;
+  transition: 0.25s;
+}
+.card-grid {
+  font-family: "Mitr", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  width: 100%;
+  height: 80%;
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: repeat(7, 200px);
+  grid-template-rows: auto;
+}
+.card {
+  background-color: #1c3144;
+  height: 19rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+  border: 0.5px solid white;
+}
+/* Client */

@@ -1,6 +1,6 @@
 import Sidebar from '@/Sidebar/Sidebar'
 import React from 'react'
-import Wait from '../../components/Wait'
+import Wait from '../../components/admin/Wait'
 
 type Props = {}
 

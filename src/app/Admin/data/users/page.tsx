@@ -1,4 +1,4 @@
-import DataUsers from '@/app/components/DataUsers'
+import DataUsers from '@/app/components/admin/DataUsers'
 import Sidebar from '@/Sidebar/Sidebar'
 import React from 'react'
 

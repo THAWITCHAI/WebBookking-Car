@@ -1,6 +1,6 @@
+import DataCar from '@/app/components/admin/DataCar'
 import Sidebar from '@/Sidebar/Sidebar'
 import React from 'react'
-import DataCar from '../../components/DataCar'
 
 type Props = {}
 

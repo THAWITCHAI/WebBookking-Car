@@ -1,4 +1,4 @@
-import DataEmployees from '@/app/components/DataEmployees'
+import DataEmployees from '@/app/components/admin/DataEmployees'
 import Sidebar from '@/Sidebar/Sidebar'
 import React from 'react'
 
