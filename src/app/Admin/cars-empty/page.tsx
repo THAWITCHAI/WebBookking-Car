@@ -1,14 +1,14 @@
 import Sidebar from '@/Sidebar/Sidebar'
 import React from 'react'
-import Wait from '../components/Wait'
+import CarEmpty from '../../components/CarsEmpty'
 
 type Props = {}
 
-export default function WaitPage({}: Props) {
+export default function CarsEmptyPage({}: Props) {
   return (
     <div className='body'>
         <Sidebar/>
-        <Wait/>
+        <CarEmpty/>
     </div>
   )
 }
