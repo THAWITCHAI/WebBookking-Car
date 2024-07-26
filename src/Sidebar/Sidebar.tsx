@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -20,23 +21,23 @@ export default function Sidebar({}: Props) {
         <ul>
           <li className="menu-i">
             <Image src={"/security.png"} width={24} height={24} alt={""} />
-            <h1>รออนุมัติ</h1>
+            <Link href={'/wait'} className="link">รออนุมัติ</Link>
           </li>
           <li className="menu-i">
             <Image src={"/car.png"} width={24} height={24} alt={""} />
-            <h1>ข้อมูลรถ</h1>
+            <Link href={'/data/cars'} className="link">ข้อมูลรถ</Link>
           </li>
           <li className="menu-i">
             <Image src={"/employee.png"} width={24} height={24} alt={""} />
-            <h1>ข้อมูลพนังงาน</h1>
+            <Link href={'/data/employees'} className="link">ข้อมูลพนังงาน</Link>
           </li>
           <li className="menu-i">
             <Image src={"/user.png"} width={24} height={24} alt={""} />
-            <h1>ข้อมูลลูกค้า</h1>
+            <Link href={'/data/users'} className="link">ข้อมูลลูกค้า</Link>
           </li>
           <li className="menu-i">
             <Image src={"/return.png"} width={24} height={24} alt={""} />
-            <h1>รถที่ว่าง</h1>
+            <Link href={'/cars-empty'} className="link">รถที่ว่าง</Link>
           </li>
         </ul>
       </div>
@@ -45,7 +46,7 @@ export default function Sidebar({}: Props) {
         <ul>
           <li className="menu-i">
             <Image src={"/logout.png"} width={24} height={24} alt={""} />
-            <h1>ออกจากระบบ</h1>
+            <button className="link">ออกจากระบบ</button>
           </li>
         </ul>
       </div>
