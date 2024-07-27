@@ -1,11 +1,9 @@
-import Sidebar from "@/Sidebar/Sidebar";
-import Wait from "./components/admin/Wait";
-import Login from "./components/admin/Login";
+import Login from "./components/Login";
 
 export default function Home() {
   return (
-    <body className="body">
+    <div>
       <Login/>
-    </body>
+    </div>
   );
 }
