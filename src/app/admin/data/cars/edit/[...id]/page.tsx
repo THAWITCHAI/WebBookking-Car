@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Sidebar from "@/Sidebar/Sidebar";
 import React from "react";
 
@@ -46,7 +46,7 @@ export default function page({ params }: Props) {
                 <label>ประเภทรถ</label>
                 <select
                   className="w-2/5 "
-                  onChange={(e)=>console.log(e.target.value)}
+                  onChange={(e) => console.log(e.target.value)}
                 >
                   <option>เลือก..</option>
                   <option>Ok2</option>

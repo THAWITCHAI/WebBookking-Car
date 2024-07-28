@@ -1,10 +1,13 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 type Props = {};
 
 export default function Sidebar({}: Props) {
+  const router = useRouter()
   return (
     <div className="sidebar">
       <div className="sidebar-head">
@@ -56,7 +59,7 @@ export default function Sidebar({}: Props) {
         <ul>
           <li className="menu-i">
             <Image src={"/logout.png"} width={24} height={24} alt={""} />
-            <button className="link">ออกจากระบบ</button>
+            <button onClick={()=>router.replace('/')} className="link">ออกจากระบบ</button>
           </li>
         </ul>
       </div>
