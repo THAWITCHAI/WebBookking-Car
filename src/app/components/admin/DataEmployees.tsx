@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -13,7 +14,7 @@ export default function DataEmployees({}: Props) {
           type="button"
           className="mb-10 focus:outline-none text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 rounded-2xl text-sm px-5 py-2.5 me-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
         >
-          เพิ่มข้อมูล
+          <Link href={'/admin/data/employees/add-employee'}>เพิ่มข้อมูล</Link>
         </button>
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -61,7 +62,7 @@ export default function DataEmployees({}: Props) {
                     type="button"
                     className="focus:outline-none text-white bg-yellow-500 hover:bg-yellow-700 focus:ring-4 focus:ring-yellow-300 rounded-2xl text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
                   >
-                    แก้ไข
+                    <Link href={'/admin/data/employees/edit/1'}>แก้ไข</Link>
                   </button>
                   <button
                     type="button"

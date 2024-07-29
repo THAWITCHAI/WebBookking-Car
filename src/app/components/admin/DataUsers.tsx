@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -8,12 +9,6 @@ export default function DataUsers({}: Props) {
       <h1 className="text-5xl font-light">ข้อมูลผู้ใช้</h1>
       <hr />
       <div className="container mt-10">
-        <button
-          type="button"
-          className="mb-10 focus:outline-none text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 rounded-2xl text-sm px-5 py-2.5 me-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-        >
-          เพิ่มข้อมูล
-        </button>
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -54,13 +49,13 @@ export default function DataUsers({}: Props) {
                 <td className="px-6 py-4">1546231</td>
                 <td className="px-6 py-4">0652974104</td>
                 <td className="px-6 py-4">เป้</td>
-                <td className="px-6 py-4">Admin</td>
+                <td className="px-6 py-4">User</td>
                 <td className="px-6 py-4 text-yellow-500">
                   <button
                     type="button"
                     className="focus:outline-none text-white bg-yellow-500 hover:bg-yellow-700 focus:ring-4 focus:ring-yellow-300 rounded-2xl text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
                   >
-                    แก้ไข
+                    <Link href={'/admin/data/users/edit/1'}>แก้ไข</Link>
                   </button>
                   <button
                     type="button"

@@ -44,9 +44,9 @@ export default function Addcar({}: Props) {
                 onChange={(e) => console.log(e.target.value)}
               >
                 <option>เลือก..</option>
-                <option>Ok2</option>
-                <option>Ok3</option>
-                <option>Ok4</option>
+                <option className="font-thin">Ok2</option>
+                <option className="font-thin">Ok3</option>
+                <option className="font-thin">Ok4</option>
               </select>
             </div>
             <div className="input">
